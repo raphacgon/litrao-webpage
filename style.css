@@ -1,0 +1,219 @@
+body {
+    background-color: black;
+    background-image: url('barbedwire.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: difference;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.9s ease;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(228, 228, 228);
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(228, 228, 228);
+    font-size: 40px;
+}
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(12, 12, 12);
+    font-size: 30px;
+}
+.theme-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.theme-label img {
+    width: 35px;
+    height: 35px;
+}
+
+
+.icon-light {
+    display: block;
+}
+
+.icon-dark {
+    display: none;
+}
+
+body:has(#theme-toggle:checked) .icon-light {
+    display: none;
+}
+
+body:has(#theme-toggle:checked) .icon-dark {
+    display: block;
+}
+
+body:has(#theme-toggle:checked) {
+    background-color: whitesmoke;
+}
+
+body:has(#theme-toggle:checked) {
+    color: black
+}
+
+body:has(#theme-toggle:checked) h1 {
+    color: black;
+}
+
+body:has(#theme-toggle:checked) h2 {
+    color: black;
+}
+body:has(#theme-toggle:checked) h3 {
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .img-card {
+    background-color: black;
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .buttons-card {
+    background-color: black;
+    color: white;
+}
+
+body:has(#theme-toggle:checked) .button {
+    background-color: rgb(221, 220, 220);
+    color: black;
+}
+
+body:has(#theme-toggle:checked) .lang-button {
+    background-color: rgb(221, 220, 220);
+    color: #141414;
+}
+
+body:has(#theme-toggle:checked) .home-button {
+    color: black
+}
+
+body:has(#theme-toggle:checked) .bottom-note {
+    color: black;
+}
+body:has(#theme-toggle:checked) .players-card{
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    background-color: black;
+    color: rgb(189, 189, 189);
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.home-button {
+    display: inline-block;
+    background: none;
+    color: rgb(242, 242, 242);
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.lang-button {
+    background-color: #141414;
+}
+
+.lowright-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.highleft-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.highright-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.button:hover {
+    opacity: 0.75;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.players-card{
+    background-color: rgb(237, 235, 235);
+    color: #0f0f0f;
+    padding: 25px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    line-height: 1.5;
+    width: 395px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-card {
+    background-color: rgb(237, 235, 235);
+    color: #0f0f0f;
+    padding: 25px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    line-height: 1.5;
+    width: fit-content;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-card {
+    background-color: rgb(237, 235, 235);
+    color: #222;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    line-height: 1.0;
+    width: fit-content;
+    height: min-content;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body:has(#theme-toggle:checked) .img-card {
+    background-color: black;
+    color: white;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.bottom-note {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    height: 15px;
+}
