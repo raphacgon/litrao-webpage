@@ -101,12 +101,16 @@ body:has(#theme-toggle:checked) .players-card{
     background-color: #0f0f0f;
     color: white;
 }
+body:has(#theme-toggle:checked) .buttons-action{
+    background-color: black;
+    color: white;
+}
 
 .button {
     display: inline-block;
     background-color: black;
     color: rgb(189, 189, 189);
-    padding: 20px;
+    padding: 12px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -131,6 +135,15 @@ body:has(#theme-toggle:checked) .players-card{
     bottom: 20px;
     right: 20px;
     z-index: 1000;
+}
+
+.lowleft-button {
+    position: fixed;
+    padding: 12px;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #222;
 }
 
 .highleft-button {
@@ -196,6 +209,19 @@ body:has(#theme-toggle:checked) .players-card{
     width: fit-content;
     height: min-content;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-action {
+    background-color: rgb(237,235,235);
+    color: #222;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    line-height: 1.0;
+    width: fit-content;
+    height: min-content;
+    
 }
 
 body:has(#theme-toggle:checked) .img-card {
